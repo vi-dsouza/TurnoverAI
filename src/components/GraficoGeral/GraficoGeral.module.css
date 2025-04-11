@@ -1,0 +1,36 @@
+.chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    max-width: 1400px;
+    font-size: 1.3rem;
+    margin: 5% auto 0 auto; /* Centraliza e dá margem no topo */
+    padding: 0 20px; /* Pequeno padding lateral pra evitar colar nas bordas em telas menores */
+    box-sizing: border-box;
+    margin-left: 5%;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .chart {
+      flex-direction: column;
+      min-height: 300px;
+      font-size: 1rem;
+      padding: 0 10px;
+      margin-top: 10%;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    .chart {
+      width: 77vw;
+      height: 70vh;
+      max-width: 1800px;
+      font-size: 1.8rem;    
+      margin-left: 0;
+    }
+  }
+  
