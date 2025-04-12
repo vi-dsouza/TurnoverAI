@@ -5,7 +5,7 @@ const FormularioCadastro = () => {
   return (
     <div className={style.containerForm}>
         <div className={style.titulo}>
-            Cadastro de Fucionários
+            Cadastro de Funcionários
         </div>
         <p>Prencha os dados solicitados</p>
 
@@ -22,7 +22,7 @@ const FormularioCadastro = () => {
                     <div className={style.inputGroup}>
                         <label>Gênero</label>
                         <select>
-                        <option value="" disabled hidden>Selecione</option>
+                        <option value="" hidden>Selecione</option>
                         <option value="masculino">Masculino</option>
                         <option value="feminino">Feminino</option>
                         <option value="outros">Outros</option>
