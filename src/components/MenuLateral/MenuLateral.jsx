@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import {
   HiArrowSmRight,
   HiChartPie,
@@ -15,23 +15,34 @@ import styles from './MenuLateral.module.css';
 const MenuLateral = () => {
   return (
     <div className={styles.sidebar}>
-      <div className={styles.logo}>TurnoverAI</div>
+    <div className={styles.logo}>TurnoverAI</div>
 
-      <nav className={styles.nav}>
-        <Link to="/dashboard"><HiChartPie /> Dashboard</Link>
-        <Link to="/cadastroFuncionario"><HiTable /> Cadastrar Funcionários</Link>
-        <Link to="/funcionarios"><HiUser /> Funcionários</Link>
-      </nav>
+    <nav className={styles.nav}>
+      <NavLink to="/dashboard" className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ''}`}>
+        <HiChartPie /> Dashboard
+      </NavLink>
+      <NavLink to="/cadastroFuncionario" className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ''}`}>
+        <HiTable /> Cadastrar Funcionários
+      </NavLink>
+      <NavLink to="/funcionarios" className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ''}`}>
+        <HiUser /> Funcionários
+      </NavLink>
+    </nav>
 
-      <div className={styles.separator}></div>
+    <div className={styles.separator}></div>
 
-      <nav className={styles.nav}>
-        
-        <Link to="/analiseSaida"><HiInbox /> Análise de Saidas</Link>
-        <Link to="/insights"><HiArrowSmRight /> Insights/ Previsões</Link>
-        <Link to="/relatorios"><HiViewBoards /> Relatórios</Link>
-      </nav>
-    </div>
+    <nav className={styles.nav}>
+      <NavLink to="/analiseSaidas" className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ''}`}>
+        <HiInbox /> Análise de Saídas
+      </NavLink>
+      <NavLink to="/insights" className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ''}`}>
+        <HiArrowSmRight /> Insights/ Previsões
+      </NavLink>
+      <NavLink to="/relatorios" className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ''}`}>
+        <HiViewBoards /> Relatórios
+      </NavLink>
+    </nav>
+  </div>
   );
 };
 

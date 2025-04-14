@@ -123,11 +123,24 @@
 
   .botaoCadastrar:hover{
     background-color: black;
-    border: 1px solid #a9825a;
+    border: 3px solid #a9825a;
   }
 
   a{
     margin-top: 20px;
     color:#a9825a;
     text-decoration: underline;
+  }
+
+  @media screen and (min-width: 1600px) {
+    .botaoCadastrar{
+      margin-top: 9%;
+    }
+
+    .gridForm{
+      margin-top: 20px;
+    }
+    a{
+      margin-top: 60px;
+    }
   }

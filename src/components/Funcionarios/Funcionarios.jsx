@@ -8,7 +8,7 @@ import 'handsontable/styles/ht-theme-main.min.css';
 
 registerAllModules();
 
-const headers = ['', 'Nome', 'Gênero', 'Equilíbrio', 'Estado Civil', 'Nível de Trabalho', 'Trabalho Remoto', 'Situação', 'Edição'];
+const headers = ['', 'Nome', 'Gênero', 'Equilíbrio', 'Estado Civil', 'Nível de Trabalho', 'Trabalho Remoto', 'Situação'];
 
 const Funcionarios = () => {
   return (
