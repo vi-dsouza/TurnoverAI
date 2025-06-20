@@ -1,0 +1,91 @@
+.container {
+    width: 77vw;
+    height: 77vh;
+    padding: 10px;
+    font-family: sans-serif;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .escolha{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    margin-bottom: 5%;
+    font-size: 1.3rem;
+    margin: 1%;
+  }
+
+  .escolha select{
+    padding: 5px;
+    width: 40vw;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid #a9825a;
+  }
+
+  .cardContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 6%;
+  }
+  
+  .chartCard {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 30vw;
+  }
+  
+  .chartCardLarge {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 910px;
+  }
+
+.botaoAnalisar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+  width: 18%;
+  font-size: 1.3rem;
+  padding: 5px;
+  border-radius: 25px;
+  background-color: #a9825a;
+  border: 3px solid transparent; 
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.botaoAnalisar:hover {
+  background-color: black;
+  border-color: #a9825a; 
+}
+  
+  @media screen and (max-width: 1024px) {
+    .chartCardLarge {
+      width: 100%;
+    }
+  
+    .chartCard {
+      width: 100%;
+    }
+  
+    .container {
+      width: 95vw;
+    }
+  }
+  

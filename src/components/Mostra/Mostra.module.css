@@ -1,0 +1,10 @@
+.main{
+    display: flex;
+    position: fixed;
+    width: 77%;
+    height: 82vh;
+    left: 21%;
+    top: 13%;
+    border-radius: 31px;
+    background-color: #070707;
+}

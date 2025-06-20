@@ -1,0 +1,63 @@
+.container {
+    width: 77vw;
+    padding: 10px;
+    font-family: sans-serif;
+  }
+
+  h1{
+    color: white;
+    padding: 15px;
+    margin-top: 0;
+  }
+  
+  .cardContainer {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 220px;
+    height: 12vh;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .card h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .chart {
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+  }
+  
+
+  @media screen and (min-width: 1600px) {
+    .container{
+        height: 82vh;
+    }
+    .cardContainer{
+        margin-top: 3%;
+        height: 15vh;
+    }
+    .chart{
+        margin-top: 5%;
+    }
+    .card{
+        height: 14vh;
+    }
+
+  }
