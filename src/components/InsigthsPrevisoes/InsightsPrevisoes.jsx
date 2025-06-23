@@ -75,13 +75,13 @@ const InsightsPrevisoes = () => {
       align: 'left'
     },
     xaxis: {
-      labels: {
       categories: setores,
-      rotate: -30, // ou -15
-      style: {
-        fontSize: '10px'
+      labels: {
+        rotate: -30,
+        style: {
+          fontSize: '10px'
+        }
       }
-  }
     },
     yaxis: {
       labels: {
@@ -94,7 +94,7 @@ const InsightsPrevisoes = () => {
       }
     },
     legend: {
-      show: false // ← remove a legenda
+      show: false
     },
     colors: ['#a9825a']
   };
@@ -108,13 +108,13 @@ const InsightsPrevisoes = () => {
 
   return (
     <div className={style.container}>
-      <h1>Insights e Previsões</h1>
+      <h1>Insights de Permanência</h1>
 
       <div className={style.cardContainer}>
         <div className={style.card}>
           <h2>Permanência Geral</h2>
           {error ? (
-            <p style={{ color: "red" }}>Erro ao carregar dados.</p>
+            <p style={{ color: "red" }}>0</p>
           ) : permanencia ? (
             <p>{permanencia}</p>
           ) : (
@@ -124,7 +124,7 @@ const InsightsPrevisoes = () => {
         <div className={style.card}>
           <h2>Gênero Mais Permanente</h2>
           {error ? (
-            <p style={{ color: "red" }}>Erro ao carregar resultado.</p>
+            <p style={{ color: "red" }}>0</p>
           ) : resultadoGenero ? (
             <p>{resultadoGenero}</p>
           ) : (
@@ -134,7 +134,7 @@ const InsightsPrevisoes = () => {
         <div className={style.card}>
           <h2>Setor mais Permanente</h2>
           {error ? (
-            <p style={{ color: "red" }}>Erro ao carregar resultado.</p>
+            <p style={{ color: "red" }}>0</p>
           ) : resultadoSetor ? (
             <p>{resultadoSetor}</p>
           ) : (

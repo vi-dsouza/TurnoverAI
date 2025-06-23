@@ -36,7 +36,7 @@ const MenuLateral = () => {
         <HiInbox /> Análise de Saídas
       </NavLink>
       <NavLink to="/insights" className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ''}`}>
-        <HiArrowSmRight /> Insights/ Previsões
+        <HiArrowSmRight /> Insights de Permanência
       </NavLink>
       <NavLink to="/relatorios" className={({ isActive }) => `${styles.link} ${isActive ? styles.active : ''}`}>
         <HiViewBoards /> Relatórios

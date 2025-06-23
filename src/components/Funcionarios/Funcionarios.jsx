@@ -8,7 +8,7 @@ import 'handsontable/styles/ht-theme-main.min.css';
 
 registerAllModules();
 
-const headers = ['ID', 'Nome', 'Setor', 'Gênero', 'Equilíbrio', 'Estado Civil', 'Nível de Trabalho', 'Trabalho Remoto', 'Situação'];
+const headers = ['ID', 'Nome', 'Setor', 'Gênero', 'Equilíbrio', 'Estado Civil', 'Nível de Trabalho', 'Trabalho Remoto', 'Prob_Permanência', 'Attrition'];
 
 const Funcionarios = () => {
   const [dados, setDados] = useState([]);
